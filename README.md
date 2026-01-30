@@ -8,7 +8,7 @@ DoView is a visual diagram methodology that shows the theory of change for an in
 
 ## Usage
 
-Add the `doview-skill.md` file to your Claude custom instructions or project knowledge to enable DoView diagram generation.
+Add the `SKILL.md` file to your Claude custom instructions or project knowledge to enable DoView diagram generation.
 
 When activated, the skill will:
 
