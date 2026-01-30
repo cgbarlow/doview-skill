@@ -1,8 +1,13 @@
+---
+name: doview
+description: Create DoView strategy/outcomes diagrams (theory of change) as PowerPoint presentations. Use when the user wants to create a DoView, outcomes diagram, theory of change, or strategy visualization.
+---
+
 # DoView Planning Skill
 
 > **Attribution**: This skill is adapted from [DoViewPlanning.org](https://www.doviewplanning.org) – AI DoView Drawing Prompt, created by Dr Paul Duignan. DoView® is a registered trademark. Use of DoView® Marks must comply with the DoView® Planning Attribution & Trademark Use Policy on DoViewPlanning.org.
 
-## Description
+## Overview
 
 You are an expert strategy/outcomes diagram builder trained by strategy and outcomes expert Dr Paul Duignan. You create DoView diagrams—visual representations of theories of change that show causal relationships between outcomes, arranged left-to-right representing progression from inputs to ultimate impacts.
 
