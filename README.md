@@ -14,34 +14,46 @@ DoView is a visual diagram methodology that shows the theory of change for an in
 |-------|--------------|------|
 | **doview** | PowerPoint (`.pptx`) | [`skills/doview/SKILL.md`](skills/doview/SKILL.md) |
 | **doview-drawio** | draw.io (`.drawio`) | [`skills/doview-drawio/SKILL.md`](skills/doview-drawio/SKILL.md) |
+| **doview-excalidraw** | Excalidraw (`.excalidraw`) | [`skills/doview-excalidraw/SKILL.md`](skills/doview-excalidraw/SKILL.md) |
 
-### doview (PowerPoint)
+### Which skill should I use?
 
-Generates Python code using `python-pptx` to produce a PowerPoint presentation. Requires `pip install python-pptx`.
+All three skills share the same interactive three-stage workflow and produce identical DoView content — they differ only in output format and tooling.
 
-### doview-drawio (draw.io)
+| If you want to... | Use |
+|---|---|
+| Share polished slides with stakeholders or present in meetings | **doview** (PowerPoint) |
+| Edit the diagram iteratively in a desktop app or embed in wikis/docs | **doview-drawio** (draw.io) |
+| Get a hand-drawn whiteboard aesthetic, or use Excalidraw/Obsidian | **doview-excalidraw** (Excalidraw) |
 
-Generates draw.io XML directly — no code execution or dependencies required. The output `.drawio` file can be opened in [draw.io](https://app.diagrams.net), diagrams.net, or the VS Code draw.io extension.
+**doview (PowerPoint)** — Generates Python code using `python-pptx` to produce a PowerPoint presentation. Best for boardroom decks, stakeholder briefings, or anything destined for PowerPoint/Google Slides. Requires `pip install python-pptx`.
 
-**Why draw.io?** Because `.drawio` files are plain XML, CLI coding agents like Claude Code can read, write, and edit them directly in your IDE. This means you can have a fully interactive workflow — create a DoView, preview it in your editor, then ask the agent to make changes through conversation:
+![PowerPoint example](examples/images/powerpoint-example.png)
+
+**doview-drawio (draw.io)** — Generates draw.io XML directly — no code execution or dependencies required. Opens in [draw.io](https://app.diagrams.net), diagrams.net, or the [VS Code draw.io extension](https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio). Good for teams already using draw.io/diagrams.net.
+
+![draw.io example](examples/images/drawio-example.png)
+
+**doview-excalidraw (Excalidraw)** — Generates Excalidraw JSON directly — no code execution or dependencies required. Opens in [Excalidraw](https://excalidraw.com), the [VS Code Excalidraw extension](https://marketplace.visualstudio.com/items?itemName=pomdtr.excalidraw-editor), or [Obsidian](https://obsidian.md) with the Excalidraw plugin. Choose between a sketchy hand-drawn look or a clean professional style.
+
+![Excalidraw example](examples/images/excalidraw-example.png)
+
+Because draw.io and Excalidraw output plain text formats (XML and JSON), Claude Code can read, edit, and rewrite them directly. This enables a fully interactive workflow — create a DoView, preview it in your editor, then refine through conversation:
 
 - "Move the 'Funding secured' box to column 3"
 - "Add a new outcome between 'Staff trained' and 'Service delivered'"
 - "Split the 'Operations' subpage into two pages"
 - "Change the color scheme on the overview page"
-- "Rename all boxes on the Governance page to use British spelling"
-
-No context switching, no manual editing — just describe what you want changed and the agent updates the XML in place. Combined with a draw.io preview extension (such as the [VS Code draw.io extension](https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio)), you get a live visual feedback loop: ask, update, preview, iterate.
 
 ## How It Works
 
-Both skills follow the same three-stage interactive workflow:
+All three skills follow the same three-stage interactive workflow:
 
 1. **Setup questions** — understand your initiative, naming, scope, and preferences
 2. **Subpage structure** — draft and refine the high-level page layout with user approval
 3. **Detailed content** — develop box content using "This-Then" causal logic, then generate the output file
 
-After generation, the draw.io skill supports ongoing refinement — keep the conversation going to reshape the diagram iteratively.
+After generation, the draw.io and Excalidraw skills support ongoing refinement — keep the conversation going to reshape the diagram iteratively.
 
 ## Features
 
@@ -53,8 +65,10 @@ After generation, the draw.io skill supports ongoing refinement — keep the con
 - Arrow connectors showing causal flow
 - Overview, Final Outcomes, and Sources pages
 - Configurable spelling, disclaimers, and page dimensions
-- **draw.io**: post-generation editing via natural language conversation
-- **draw.io**: no runtime dependencies — output is pure XML
+- **draw.io & Excalidraw**: post-generation editing via natural language conversation
+- **draw.io & Excalidraw**: no runtime dependencies — output is pure markup/JSON
+- **Excalidraw**: hand-drawn or clean visual style
+- **Excalidraw**: frames-on-canvas or separate-files page organization
 
 ## Installation
 
@@ -66,9 +80,12 @@ cp skills/doview/SKILL.md ~/.claude/commands/doview.md
 
 # draw.io skill
 cp skills/doview-drawio/SKILL.md ~/.claude/commands/doview-drawio.md
+
+# Excalidraw skill
+cp skills/doview-excalidraw/SKILL.md ~/.claude/commands/doview-excalidraw.md
 ```
 
-Then invoke with `/doview` or `/doview-drawio` in Claude Code.
+Then invoke with `/doview`, `/doview-drawio`, or `/doview-excalidraw` in Claude Code.
 
 ## Attribution
 
