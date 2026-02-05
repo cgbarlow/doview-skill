@@ -10,7 +10,9 @@ DoView is a visual diagram methodology that shows the theory of change for an in
 
 *DoView is Open and Free to Use.*
 
-The DoView Planning methodology is open and free for anyone to use. The methodology is easy to use in PowerPoint or Google Slides. You just need to acknowledge that you are using DoView Planning and building DoView diagrams if you do. DoView Planning can provide a top-end to project planning, and could be vertically integrated into project planning platforms and other widely used systems. You are encouraged to use the terms DoView Planning and DoViews, with acknowledgment, just as long as you do not imply endorsement by us.  See **Attribution** section for appropriate acknowledgment and use.
+The DoView Planning methodology is open and free for anyone to use. The methodology is easy to use in PowerPoint or Google Slides. You just need to acknowledge that you are using DoView Planning and building DoView diagrams if you do. DoView Planning can provide a top-end to project planning, and could be vertically integrated into project planning platforms and other widely used systems. 
+
+You are encouraged to use the terms DoView Planning and DoViews, with acknowledgment, just as long as you do not imply endorsement by us. See **Attribution** section for appropriate acknowledgment and use.
 
 ### Getting Started
 
