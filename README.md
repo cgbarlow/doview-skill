@@ -30,7 +30,7 @@ All three skills share the same interactive three-stage workflow and produce ide
 
 ![PowerPoint example](examples/images/powerpoint-example.png)
 
-**doview-drawio (draw.io)** — Generates draw.io XML directly — no code execution or dependencies required. Opens in [draw.io](https://app.diagrams.net), diagrams.net, or the [VS Code draw.io extension](https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio). Good for teams already using draw.io/diagrams.net.
+**doview-drawio (draw.io)** — Generates draw.io XML directly — no code execution or dependencies required. Opens in [draw.io](https://app.diagrams.net), diagrams.net, or the [VS Code draw.io extension](https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio). Good for teams already using draw.io/diagrams.net, includes support for tabs, links.
 
 ![draw.io example](examples/images/drawio-example.png)
 
