@@ -38,7 +38,7 @@ All three skills share the same interactive three-stage workflow and produce ide
 
 ![Excalidraw example](examples/images/excalidraw-example.png)
 
-Because draw.io and Excalidraw output plain text formats (XML and JSON), Claude Code can read, edit, and rewrite them directly. This enables a fully interactive workflow — create a DoView, preview it in your editor, then refine through conversation:
+Because draw.io and Excalidraw output plain text formats (XML and JSON), Claude Code (or any other CLI coding agent) can read, edit, and rewrite them directly. This enables a fully interactive workflow — create a DoView, preview it in your editor, then refine through conversation:
 
 - "Move the 'Funding secured' box to column 3"
 - "Add a new outcome between 'Staff trained' and 'Service delivered'"
