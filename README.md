@@ -8,6 +8,12 @@ DoView is a visual diagram methodology that shows the theory of change for an in
 
 ## Usage
 
+*DoView is Open and Free to Use.*
+
+The DoView Planning methodology is open and free for anyone to use. The methodology is easy to use in PowerPoint or Google Slides. You just need to acknowledge that you are using DoView Planning and building DoView diagrams if you do. DoView Planning can provide a top-end to project planning, and could be vertically integrated into project planning platforms and other widely used systems. You are encouraged to use the terms DoView Planning and DoViews, with acknowledgment, just as long as you do not imply endorsement by us.  See **Attribution** section for appropriate acknowledgment and use.
+
+### Getting Started
+
 Add the `SKILL.md` file to your Claude custom instructions or project knowledge to enable DoView diagram generation.
 
 When activated, the skill will:
@@ -37,9 +43,10 @@ pip install python-pptx
 
 ## Attribution
 
-This skill is adapted from [DoViewPlanning.org](https://www.doviewplanning.org) – AI DoView Drawing Prompt, created by Dr Paul Duignan.
+**Attribution**: 
+This skill is adapted from [DoViewPlanning.org](https://www.doviewplanning.org) – AI DoView Drawing Prompt, created by Dr Paul Duignan. 
 
-DoView® is a registered trademark. Use of DoView® Marks must comply with the DoView® Planning Attribution & Trademark Use Policy on DoViewPlanning.org.
+DoView® is a registered trademark. Use of DoView® Marks must comply with the DoView® Planning [Attribution & Trademark Use Policy](https://www.doviewplanning.org/trademarkuse) on DoViewPlanning.org.
 
 ## License
 
