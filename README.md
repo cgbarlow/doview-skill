@@ -34,7 +34,7 @@ All three skills share the same interactive three-stage workflow and produce ide
 
 ![draw.io example](examples/images/drawio-example.png)
 
-**doview-excalidraw (Excalidraw)** — Generates Excalidraw JSON directly — no code execution or dependencies required. Opens in [Excalidraw](https://excalidraw.com), the [VS Code Excalidraw extension](https://marketplace.visualstudio.com/items?itemName=pomdtr.excalidraw-editor), or [Obsidian](https://obsidian.md) with the Excalidraw plugin. Choose between a sketchy hand-drawn look or a clean professional style.
+**doview-excalidraw (Excalidraw)** — Generates Excalidraw JSON directly — no code execution or dependencies required. Opens in [Excalidraw](https://excalidraw.com), the [VS Code Excalidraw extension](https://marketplace.visualstudio.com/items?itemName=pomdtr.excalidraw-editor), or [Obsidian](https://obsidian.md) with the Excalidraw plugin. Choose between a sketchy hand-drawn look or a clean professional style. Limited to single pages.
 
 ![Excalidraw example](examples/images/excalidraw-example.png)
 
