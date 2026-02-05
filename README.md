@@ -67,6 +67,8 @@ After generation, the draw.io and Excalidraw skills support ongoing refinement â
 - Configurable spelling, disclaimers, and page dimensions
 - **draw.io & Excalidraw**: post-generation editing via natural language conversation
 - **draw.io & Excalidraw**: no runtime dependencies â€” output is pure markup/JSON
+- **draw.io**: tabs for each individual page
+- **draw.io**: hyperlinks (external and within the model)
 - **Excalidraw**: hand-drawn or clean visual style
 - **Excalidraw**: frames-on-canvas or separate-files page organization
 
