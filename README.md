@@ -23,6 +23,16 @@ Generates Python code using `python-pptx` to produce a PowerPoint presentation. 
 
 Generates draw.io XML directly — no code execution or dependencies required. The output `.drawio` file can be opened in [draw.io](https://app.diagrams.net), diagrams.net, or the VS Code draw.io extension.
 
+**Why draw.io?** Because `.drawio` files are plain XML, CLI coding agents like Claude Code can read, write, and edit them directly in your IDE. This means you can have a fully interactive workflow — create a DoView, preview it in your editor, then ask the agent to make changes through conversation:
+
+- "Move the 'Funding secured' box to column 3"
+- "Add a new outcome between 'Staff trained' and 'Service delivered'"
+- "Split the 'Operations' subpage into two pages"
+- "Change the color scheme on the overview page"
+- "Rename all boxes on the Governance page to use British spelling"
+
+No context switching, no manual editing — just describe what you want changed and the agent updates the XML in place. Combined with a draw.io preview extension (such as the [VS Code draw.io extension](https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio)), you get a live visual feedback loop: ask, update, preview, iterate.
+
 ## How It Works
 
 Both skills follow the same three-stage interactive workflow:
@@ -30,6 +40,8 @@ Both skills follow the same three-stage interactive workflow:
 1. **Setup questions** — understand your initiative, naming, scope, and preferences
 2. **Subpage structure** — draft and refine the high-level page layout with user approval
 3. **Detailed content** — develop box content using "This-Then" causal logic, then generate the output file
+
+After generation, the draw.io skill supports ongoing refinement — keep the conversation going to reshape the diagram iteratively.
 
 ## Features
 
@@ -41,6 +53,8 @@ Both skills follow the same three-stage interactive workflow:
 - Arrow connectors showing causal flow
 - Overview, Final Outcomes, and Sources pages
 - Configurable spelling, disclaimers, and page dimensions
+- **draw.io**: post-generation editing via natural language conversation
+- **draw.io**: no runtime dependencies — output is pure XML
 
 ## Installation
 
